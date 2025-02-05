@@ -9,7 +9,6 @@ const ProjectPage = () => {
   const [curItem, setCurItem] = useState("project-1");
 
   useEffect(() => {
-    console.log("시작1");
     const scrollSpy = () => {
       listRefs.current.forEach((el, index) => {
         const top = window.scrollY;
@@ -33,7 +32,7 @@ const ProjectPage = () => {
     <main className="pt-[6.25rem] p-5 mx-auto min-h-full max-w-screen-2xl flex gap-5">
       <ul
         role="tablist"
-        className="hidden md:block sticky px-5 top-[6.25rem] h-[calc(100vh-120px)] w-60 lg:w-80 xl:w-96 flex-shrink-0 text-right font-medium space-y-5 border-r"
+        className="hidden md:block sticky px-5 pb-10 top-[6.25rem] h-fit w-60 lg:w-80 xl:w-96 flex-shrink-0 text-right font-medium space-y-5 border-r"
       >
         {PROJECTS.map((item, idx) => (
           <li
