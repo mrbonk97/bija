@@ -1,12 +1,14 @@
 import "./globals.css";
+import "./tw.css";
 import type { Metadata } from "next";
 import { ThemeProvider } from "@/components/theme-provider";
 import { pretendard } from "@/lib/font";
 import { Topnav } from "@/components/nav/top-nav";
+import { Footer } from "@/components/nav/footer";
 
 export const metadata: Metadata = {
-  title: "개발 블로그[비자]",
-  description: "개발도 하고 피자도 먹고",
+  title: "asd",
+  description: "asd",
 };
 
 export default function RootLayout({
@@ -19,12 +21,13 @@ export default function RootLayout({
       <body className={`${pretendard.className} antialiased`}>
         <ThemeProvider
           attribute="class"
-          defaultTheme="system"
+          defaultTheme="light"
           enableSystem
           disableTransitionOnChange
         >
           <Topnav />
           {children}
+          <Footer />
         </ThemeProvider>
       </body>
     </html>

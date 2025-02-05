@@ -75,7 +75,41 @@ body {
   }
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 html,
 body {
   height: 100%;
+}
+
+.flex2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#pattern-project-1 {
+  background-image: url("/pattern/cube.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#bg-project-2 {
+  background-image: url("/pattern/wavy-smooth.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#pattern-project-3 {
+  background-image: url("/pattern/colorful-background-cute.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#bg-project-4 {
+  background-image: url("/pattern/park.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }

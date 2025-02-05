@@ -5,7 +5,7 @@ import Link from "next/link";
 
 export function Topnav() {
   return (
-    <nav className="fixed top-0 px-[5%] h-20 w-full bg-background flex items-center justify-between border-b">
+    <nav className="z-10 fixed top-0 px-[5%] h-20 w-full bg-background flex items-center justify-between border-b">
       <Logo />
       <ul className="space-x-5 font-medium opacity-80">
         {MENU.map((item) => (
