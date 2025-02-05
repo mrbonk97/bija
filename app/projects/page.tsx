@@ -17,8 +17,9 @@ const ProjectPage = () => {
         if (el) {
           const { offsetTop, offsetHeight } = el;
 
-          if (top >= offsetTop - 128 && top < offsetTop + offsetHeight) {
+          if (top >= offsetTop - 256 && top < offsetTop + offsetHeight) {
             setCurItem(PROJECTS[index].id);
+            return;
           }
         }
       });
@@ -30,12 +31,20 @@ const ProjectPage = () => {
 
   return (
     <main className="pt-[6.25rem] p-5 mx-auto min-h-full max-w-screen-2xl flex gap-5">
-      <ul className="hidden md:block sticky px-5 top-[6.25rem] h-[calc(100vh-120px)] w-60 lg:w-80 xl:w-96 flex-shrink-0 text-right font-medium space-y-5 border-r">
+      <ul
+        role="tablist"
+        className="hidden md:block sticky px-5 top-[6.25rem] h-[calc(100vh-120px)] w-60 lg:w-80 xl:w-96 flex-shrink-0 text-right font-medium space-y-5 border-r"
+      >
         {PROJECTS.map((item, idx) => (
-          <li key={`list-${item.id}`} aria-current={item.id == curItem} className="group">
+          <li
+            role="tab"
+            key={`list-${item.id}`}
+            aria-selected={item.id == curItem}
+            className="group"
+          >
             <a
               href={`#${item.id}`}
-              className="block p-2 hover:bg-secondary group-aria-current:bg-secondary duration-150"
+              className={`block p-2 hover:bg-secondary group-aria-selected:bg-secondary duration-150`}
             >
               <p className="text-xl">프로젝트{idx + 1}</p>
               <p className="text-xs opacity-70">{item.title}</p>
@@ -43,7 +52,7 @@ const ProjectPage = () => {
           </li>
         ))}
       </ul>
-      <section className="w-full space-y-40 ">
+      <section className="w-full space-y-60">
         {PROJECTS.map((item, idx) => (
           <ProjectCard
             key={item.id}
