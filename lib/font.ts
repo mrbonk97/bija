@@ -6,7 +6,7 @@ export const maruburi = localFont({
   src: [
     {
       path: "./fonts/maruburi/MaruBuri-Bold.woff2",
-      weight: "400",
+      weight: "700",
       style: "bold",
     },
     {

@@ -12,7 +12,7 @@ export const MENU = [
   {
     id: "menu-3",
     title: "작품",
-    url: "/product",
+    url: "/projects",
   },
   {
     id: "menu-4",

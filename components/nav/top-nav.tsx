@@ -1,6 +1,5 @@
 import { Logo } from "@/components/logo";
 import { MENU } from "@/constants";
-import { SearchIcon } from "lucide-react";
 import Link from "next/link";
 
 export function Topnav() {
@@ -14,7 +13,7 @@ export function Topnav() {
           </li>
         ))}
       </ul>
-      <SearchIcon className="inline-block w-16 bg-rose-200" />
+      <div className="h-0.5 w-16" />
     </nav>
   );
 }
