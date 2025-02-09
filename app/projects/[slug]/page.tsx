@@ -91,12 +91,13 @@ const ProjectDetailPage = async ({ params }: Props) => {
                     alt={`이미지${item2.id}`}
                     height={600}
                     width={600}
+                    className="my-10 mx-auto"
                   />
                 );
 
               if (item2.type == "PARAGRAPH")
                 return (
-                  <p key={item2.id} className="opacity-80">
+                  <p key={item2.id} className="p-5 font-medium break-keep opacity-80">
                     {item2.content}
                   </p>
                 );

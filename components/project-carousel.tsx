@@ -24,8 +24,8 @@ export function ProjectCarousel({ images }: Props) {
       <CarouselContent>
         {images.map((item) => (
           <CarouselItem key={item} className="md:basis-1/2 lg:basis-1/3">
-            <div className="p-1 h-96 border">
-              <Image src={item} alt="imgasd" height={600} width={400} />
+            <div className="p-0.5 rounded-xl bg-foreground/80">
+              <Image src={item} alt="image" height={600} width={400} className="rounded-xl" />
             </div>
           </CarouselItem>
         ))}
