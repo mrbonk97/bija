@@ -3,12 +3,12 @@ import { RESUME } from "@/constants/resume";
 
 const AboutMePage = () => {
   return (
-    <main className="pt-[6.25rem] pb-20 px-5 mx-auto max-w-screen-xl space-y-36 md:space-y-52">
+    <main className="pt-[6.25rem] pb-20 px-5 mx-auto max-w-screen-xl space-y-24 md:space-y-52">
       <hgroup className="pt-20">
-        <h1 className="text-5xl font-bold text-center leading-snug break-keep opacity-80">
-          안녕하세요 개발자 <strong>김현석</strong>입니다.
+        <h1 className="text-4xl md:text-5xl font-bold text-center leading-snug break-keep opacity-80">
+          안녕하세요 <span className="text-blue-500">개발자</span> 김현석입니다.
         </h1>
-        <p className="mt-10 mx-auto max-w-screen-md text-lg font-medium text-center opacity-80">
+        <p className="mt-10 mx-auto max-w-screen-md md:text-lg font-medium text-center break-keep opacity-80">
           저는 개발자를 목표로 삼고 매일 배우며 성장하고 있습니다. 프로그래밍은 물론 프로젝트 관리,
           웹 취약점 점검 등 다양한 분야에서 경험을 쌓아왔으며, 이러한 폭넓은 경험이 저의 가장 큰
           강점이라 생각합니다.
