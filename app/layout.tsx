@@ -4,7 +4,6 @@ import type { Metadata } from "next";
 import { ThemeProvider } from "@/components/theme-provider";
 import { pretendard } from "@/lib/font";
 import { Topnav } from "@/components/nav/top-nav";
-import { Footer } from "@/components/nav/footer";
 
 export const metadata: Metadata = {
   title: "asd",
@@ -27,7 +26,6 @@ export default function RootLayout({
         >
           <Topnav />
           {children}
-          <Footer />
         </ThemeProvider>
       </body>
     </html>

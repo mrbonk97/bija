@@ -1,3 +1,3 @@
 export const Footer = () => {
-  return <footer className="h-40 bg-secondary">footer</footer>;
+  return <footer className="absolute bottom-0 h-20 w-full">footer</footer>;
 };

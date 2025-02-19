@@ -2,6 +2,16 @@ import localFont from "next/font/local";
 
 export const pretendard = localFont({ src: "./fonts/PretendardVariable.woff2" });
 
+export const kleeOne = localFont({
+  src: [
+    {
+      path: "./fonts/klee_one/KleeOne-Regular.ttf",
+      weight: "400",
+      style: "regular",
+    },
+  ],
+});
+
 export const maruburi = localFont({
   src: [
     {

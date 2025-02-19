@@ -52,6 +52,8 @@ export default {
         },
         custom: {
           "1": "hsl(var(--custom-1))",
+          "2": "hsl(var(--custom-2))",
+          "3": "hsl(var(--custom-3))",
         },
       },
       borderRadius: {
