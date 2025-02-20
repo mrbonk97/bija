@@ -6,7 +6,7 @@ const AboutMePage = () => {
     <main className="pt-[6.25rem] pb-20 px-5 mx-auto max-w-screen-xl space-y-24 md:space-y-52">
       <hgroup className="pt-20">
         <h1 className="text-4xl md:text-5xl font-bold text-center leading-snug break-keep opacity-80">
-          안녕하세요 <span className="text-blue-500">개발자</span> 김현석입니다.
+          안녕하세요 <span className="text-rose-400">개발자</span> 김현석입니다.
         </h1>
         <p className="mt-10 mx-auto max-w-screen-md md:text-lg font-medium text-center break-keep opacity-80">
           저는 개발자를 목표로 삼고 매일 배우며 성장하고 있습니다. 프로그래밍은 물론 프로젝트 관리,

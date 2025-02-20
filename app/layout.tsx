@@ -3,11 +3,10 @@ import "./tw.css";
 import type { Metadata } from "next";
 import { ThemeProvider } from "@/components/theme-provider";
 import { pretendard } from "@/lib/font";
-import { Topnav } from "@/components/nav/top-nav";
 
 export const metadata: Metadata = {
-  title: "asd",
-  description: "asd",
+  title: "비자",
+  description: "보안팀 직원의 개발 블로그",
 };
 
 export default function RootLayout({
@@ -24,7 +23,6 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
-          <Topnav />
           {children}
         </ThemeProvider>
       </body>

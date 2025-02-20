@@ -2,9 +2,15 @@ import { Logo } from "@/components/logo";
 import { MENU } from "@/constants";
 import Link from "next/link";
 
-export function Topnav() {
+interface Props {
+  bgColor: "bg-background border-custom-2" | "bg-custom-2 border-custom-3";
+}
+
+export function Topnav({ bgColor }: Props) {
   return (
-    <nav className="z-10 fixed top-0 px-[5%] h-20 w-full flex items-center justify-between border-b border-custom-3">
+    <nav
+      className={`z-10 fixed top-0 px-[5%] h-20 w-full flex items-center justify-between border-b ${bgColor}`}
+    >
       <Logo />
       <ul className="space-x-5 font-medium text-custom-3">
         {MENU.map((item) => (

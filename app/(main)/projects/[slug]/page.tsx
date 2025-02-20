@@ -17,11 +17,11 @@ const ProjectDetailPage = async ({ params }: Props) => {
 
   return (
     <main className="py-20 mx-auto min-h-full max-w-screen-xl">
-      <hgroup className="p-5">
+      <hgroup className="py-10 px-5">
         <h1 className="text-4xl font-bold opacity-80">프로젝트: {project.title}</h1>
         <h2 className="font-medium opacity-70">{project.description}</h2>
       </hgroup>
-      <section className="py-10 flex items-center gap-10 border-t">
+      <section className="py-10 flex items-center gap-10 border-t border-custom-2">
         <Image
           src={project.logoUrl}
           alt="img"

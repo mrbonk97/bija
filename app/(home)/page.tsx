@@ -5,7 +5,7 @@ const notoSerif = Noto_Serif_KR({ subsets: ["latin"] });
 
 export default function Home() {
   return (
-    <main className={`h-full text-custom-3 bg-custom-2 ${notoSerif.className}`}>
+    <main className={`min-h-[600px] h-full text-custom-3 bg-custom-2 ${notoSerif.className}`}>
       <section className="pt-20 p-5 h-full max-w-screen-2xl mx-auto flex flex-col justify-between">
         <hgroup className="p-5 text-right md:text-left">
           <h1 className="text-5xl sm:text-6xl md:text-7xl xl:text-8xl font-bold">

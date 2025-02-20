@@ -52,3 +52,11 @@
 .to-slate-500 {
   --tw-gradient-to: #64748b var(--tw-gradient-to-position);
 }
+
+.border-custom-3 {
+  border-color: hsl(var(--custom-3));
+}
+
+.border-custom-2 {
+  border-color: hsl(var(--custom-2));
+}
