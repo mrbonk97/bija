@@ -7,7 +7,7 @@ interface Props {
 const HomeLayout = ({ children }: Props) => {
   return (
     <>
-      <Topnav bgColor="bg-custom-2 border-custom-3" />
+      <Topnav bgColor="bg-custom-2 border-custom-3" isHome />
       {children}
     </>
   );

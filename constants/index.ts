@@ -2,12 +2,7 @@ export const MENU = [
   {
     id: "menu-1",
     title: "블로그",
-    url: "/dev",
-  },
-  {
-    id: "menu-2",
-    title: "나머지",
-    url: "/others",
+    url: "/blog",
   },
   {
     id: "menu-3",

@@ -32,7 +32,7 @@ const ProjectPage = () => {
     <main className="pt-[6.25rem] p-5 mx-auto min-h-full max-w-screen-2xl flex gap-5">
       <ul
         role="tablist"
-        className="hidden md:block sticky px-5 pb-10 top-[6.25rem] h-fit w-60 lg:w-80 xl:w-96 flex-shrink-0 text-right font-medium space-y-5 border-custom-2 border-r"
+        className="hidden md:block sticky px-5 pb-10 top-[6.25rem] h-fit w-60 lg:w-80 xl:w-96 flex-shrink-0 text-right font-medium space-y-5 border-custom-pink border-r"
       >
         {PROJECTS.map((item, idx) => (
           <li

@@ -37,6 +37,7 @@ body {
     --custom-1: 183 26% 57%; /* #76abae */
     --custom-2: 346 81% 87%; /* f9c5d1 */
     --custom-3: 233 33% 27%; /* 2e335c */
+    --custom-pink: 346 81% 87%; /* f9c5d1 */
   }
   .dark {
     --background: 0 0% 3.9%;
@@ -65,8 +66,9 @@ body {
     --chart-5: 340 75% 55%;
 
     --custom-1: 183 26% 57%; /* #76abae */
-    --custom-2: 346 81% 87%; /* f9c5d1 */
-    --custom-3: 233 33% 27%; /* 2e335c */
+    --custom-2: 233 33% 27%; /* 2e335c */
+    --custom-3: 346 81% 87%; /* f9c5d1 */
+    --custom-pink: 346 81% 87%; /* f9c5d1 */
   }
 }
 

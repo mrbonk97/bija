@@ -21,7 +21,7 @@ const ProjectDetailPage = async ({ params }: Props) => {
         <h1 className="text-4xl font-bold opacity-80">프로젝트: {project.title}</h1>
         <h2 className="font-medium opacity-70">{project.description}</h2>
       </hgroup>
-      <section className="py-10 flex items-center gap-10 border-t border-custom-2">
+      <section className="py-10 flex items-center gap-10 border-t border-custom-pink">
         <Image
           src={project.logoUrl}
           alt="img"

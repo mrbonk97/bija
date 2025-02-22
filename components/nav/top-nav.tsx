@@ -1,12 +1,14 @@
 import { Logo } from "@/components/logo";
 import { MENU } from "@/constants";
 import Link from "next/link";
+import { ModeToggle } from "@/components/mode-toggle";
 
 interface Props {
-  bgColor: "bg-background border-custom-2" | "bg-custom-2 border-custom-3";
+  isHome?: boolean;
+  bgColor: "bg-background border-custom-pink" | "bg-custom-2 border-custom-3";
 }
 
-export function Topnav({ bgColor }: Props) {
+export function Topnav({ isHome = false, bgColor }: Props) {
   return (
     <nav
       className={`z-10 fixed top-0 px-[5%] h-20 w-full flex items-center justify-between border-b ${bgColor}`}
@@ -19,7 +21,7 @@ export function Topnav({ bgColor }: Props) {
           </li>
         ))}
       </ul>
-      <div className="h-0.5 w-16" />
+      <ModeToggle isHome={isHome} />
     </nav>
   );
 }

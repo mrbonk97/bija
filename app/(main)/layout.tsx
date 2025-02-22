@@ -8,7 +8,7 @@ interface Props {
 const MainLayout = ({ children }: Props) => {
   return (
     <>
-      <Topnav bgColor="bg-background border-custom-2" />
+      <Topnav bgColor="bg-background border-custom-pink" />
       {children}
       <Footer />
     </>
