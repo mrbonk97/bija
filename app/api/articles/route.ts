@@ -5,6 +5,7 @@ const sql = `
 SELECT 
     article_id 
   , title 
+  , thumbnail 
   , TO_CHAR(created_at, 'YYYY.MM.DD') AS created_at 
 from bija_article 
 WHERE title LIKE '%' || :q || '%'

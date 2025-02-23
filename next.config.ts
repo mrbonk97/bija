@@ -1,6 +1,14 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
+  images: {
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "gs2oiijb3m.ufs.sh",
+      },
+    ],
+  },
   webpack: (config) => {
     /**
      * These packages need to be added as external, else Oracle DB will try to load them due to a

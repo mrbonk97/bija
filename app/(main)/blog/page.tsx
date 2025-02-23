@@ -18,6 +18,8 @@ const BlogPage = async ({ searchParams }: Props) => {
   const url = new URL(`http://localhost:3000/api/articles?q=${q || ""}`);
   const data = await fetch(url.href).then((res) => res.json());
 
+  console.log(data.data);
+
   return (
     <main className="p-5 pt-[6.25rem] mx-auto min-h-full max-w-screen-2xl">
       <header className="p-5 flex items-center gap-10 border-b">
@@ -38,6 +40,7 @@ const BlogPage = async ({ searchParams }: Props) => {
                 key={`article-${item.ARTICLE_ID}`}
                 id={item.ARTICLE_ID}
                 title={item.TITLE}
+                thumbnail={item.THUMBNAIL}
                 createdAt={item.CREATED_AT}
               />
             ))}
@@ -47,7 +50,7 @@ const BlogPage = async ({ searchParams }: Props) => {
           <header>
             <h2 className="text-lg font-medium opacity-80">인기있는 글</h2>
           </header>
-          <p className="mt-2 font-medium opacity-70">인기있는 글은 없습니다...</p>
+          <p className="mt-2 font-medium opacity-70">이곳은 인기가 없습니다...</p>
         </aside>
       </div>
     </main>

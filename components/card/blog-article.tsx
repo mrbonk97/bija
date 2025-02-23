@@ -4,10 +4,11 @@ import Link from "next/link";
 interface Props {
   id: string;
   title: string;
+  thumbnail: string;
   createdAt: string;
 }
 
-export const BlogArticle = ({ id, title, createdAt }: Props) => {
+export const BlogArticle = ({ id, title, thumbnail, createdAt }: Props) => {
   return (
     <article className="col-span-1">
       <Link
@@ -32,7 +33,13 @@ export const BlogArticle = ({ id, title, createdAt }: Props) => {
             </div>
           </div>
         </header>
-        <div className="mt-5 bg-blue-100 h-40"></div>
+        <Image
+          src={thumbnail}
+          alt="thumbnail"
+          height={256}
+          width={1000}
+          className="mt-5 h-40 object-cover rounded-xl"
+        />
       </Link>
     </article>
   );
