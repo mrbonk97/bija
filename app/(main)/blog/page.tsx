@@ -18,15 +18,13 @@ const BlogPage = async ({ searchParams }: Props) => {
   const url = new URL(`${process.env.API_URL}/articles?q=${q || ""}`);
   const data = await fetch(url.href).then((res) => res.json());
 
-  console.log(data.data);
-
   return (
     <main className="p-5 pt-[6.25rem] mx-auto min-h-full max-w-screen-2xl">
       <header className="p-5 flex items-center gap-10 border-b">
         <Image src={"/images/space-suit.png"} alt="alien" height={64} width={64} />
         <h1 className="text-3xl font-bold opacity-80">대충 개발 블로그</h1>
       </header>
-      <div className="mt-10 flex gap-5 justify-between">
+      <div className="mt-5 lg:mt-10 flex gap-5 justify-between">
         <div className="w-full">
           <form className="relative" action={"/blog"}>
             <button className="absolute top-1/2 left-0 -translate-y-1/2 h-full aspect-square flex2 hover:opacity-50 duration-150">
@@ -34,7 +32,7 @@ const BlogPage = async ({ searchParams }: Props) => {
             </button>
             <input name="q" className="py-3 pr-5 px-14 w-full border rounded-lg" />
           </form>
-          <div className="mt-5 grid grid-cols-3 gap-10">
+          <div className="mt-5 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-10">
             {data.data.list.map((item: articleType) => (
               <BlogArticle
                 key={`article-${item.ARTICLE_ID}`}
@@ -44,9 +42,18 @@ const BlogPage = async ({ searchParams }: Props) => {
                 createdAt={item.CREATED_AT}
               />
             ))}
+            {data.data.list.map((item: articleType) => (
+              <BlogArticle
+                key={`article1-${item.ARTICLE_ID}`}
+                id={item.ARTICLE_ID}
+                title={item.TITLE}
+                thumbnail={item.THUMBNAIL}
+                createdAt={item.CREATED_AT}
+              />
+            ))}
           </div>
         </div>
-        <aside className="px-5 py-2 border-l border-custom-pink w-80">
+        <aside className="hidden lg:block px-5 py-2 border-l border-custom-pink w-80">
           <header>
             <h2 className="text-lg font-medium opacity-80">인기있는 글</h2>
           </header>
