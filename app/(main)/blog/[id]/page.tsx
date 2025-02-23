@@ -13,7 +13,7 @@ interface Props {
 
 const BlogDetailPage = async ({ params }: Props) => {
   const { id } = await params;
-  const article: articleType = await fetch(`http://localhost:3000/api/articles/${id}`)
+  const article: articleType = await fetch(`${process.env.API_URL}/articles/${id}`)
     .then((res) => res.json())
     .then((res) => res.data.article);
 

@@ -15,7 +15,7 @@ interface Props {
 
 const BlogPage = async ({ searchParams }: Props) => {
   const { q } = await searchParams;
-  const url = new URL(`http://localhost:3000/api/articles?q=${q || ""}`);
+  const url = new URL(`${process.env.API_URL}/articles?q=${q || ""}`);
   const data = await fetch(url.href).then((res) => res.json());
 
   console.log(data.data);
